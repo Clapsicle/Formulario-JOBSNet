@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+body { 
+    background-color:rgb(255, 255, 255); 
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    /* display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 10px;
+    margin-bottom: 50px; */
+    background: var(--main);
+    box-shadow: 8px 8px 15px 8px rgba(119, 119, 119, 0.25);
+    height: 130px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;  
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color:rgb(131, 54, 219);
+    text-decoration: underline;
+}
+.container {
+    height: 90%;
+    display: flex;
+    margin: 3.8rem auto;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img {
+    width: 640px;
+    height: auto;
+} */
+
+.main-text, form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content:center;
+}
+
+.title {
+    color: var(--main);
+    font-size: 32px;
+}
+
+ .title-decoration{
+    width: 70px;
+    height: 6px;
+    background-color: var(--text);
+    margin: 15px 0 1em 0;
+} 
+
+.intro-texto {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 400;
+}
+.formulario {
+    background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+} 
+
+.formulario h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--main);
+}
+
+form {
+    margin: 4rem auto;
+    font-size: 18px;
+    color: #171717;
+    width: 65%;
+    background-color: #fff;
+}
+
+input, select, textarea, option{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid;   
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+fieldset {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.cep input{
+    width: 220px;;
+}
+
+ .estado, .numero input{
+    width: 150px;
+}
+
+.rua input {
+    width: 500px;
+}
+
+form h2 {
+    color: var(--main);
+    font-weight: 500;
+    margin:20px;
+}
+
+.carro {
+    flex-direction: row;
+    width: 200px;
+}
+
+.carro label, .habilitacao label {
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.habilitacao {
+    height: 80px;
+    margin-right: 40px
+}
+
+.habilitacao input {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 15%;
+    background: linear-gradient(to right, #110436 50%, #330657 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    width: 400px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+button:hover {
+    background-position: left bottom;
+}
+
+span {
+    font-size: 18px;
+    color: red;
+    display: inline-block;
+}
+
+/* form{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-top: 0.625rem;
+    border-bottom: 1px solid;
+    
+}
+    
+div {
+    padding: 3px;
+}
+    
+label {
+    font-size: 13px;
+    font-size: 0.8125rem;    
+}
+
+#container {
+    box-shadow: 0 0 5px 0px #fff;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin: 50px 50px 50px 50px;
+}
+
+.bloco {
+width: 45%;
+display: flex;
+justify-content: space-between;
+}
+
+.preenchimentoObrigatorio{
+    color: red;
+}
+
+#cpf {
+-moz-text-decoration-style: none;
+}
+
+#DataNascimento select{
+    padding: 0px 5px;
+}
+#cep, #telefone, #celular,
+#identidade, #cpf{
+    width: 7.5rem;    
+}
+
+#nome, #endereco, #email {
+width: 18.75rem;
+}
+
+#categoriasHabilitacao, #possuiveiculo {
+    width: 5.625rem;
+}
+
+#numResidencia {
+    width: 3rem;
+}
+
+#container button {
+    width: 10rem;
+    padding: 5px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #631463 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:#FFF;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: -5px;
+    margin-top: 15px;
+}
+
+#container button:hover{
+    background-position: left bottom;
+}
+
+footer{
+    
+    border-top: 1px solid;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #631463;
+}
+
+footer p {
+    color: #FFF;
+}
+
+footer p a {
+    transition: 400ms;
+    color: #FFF;
+}
+
+footer p a:hover{
+    color:#da852d;
+    text-decoration: underline;
+}
+
+
+span {
+    font-size: 0.75rem;
+    color: red;
+} */

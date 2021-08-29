@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>Formulário JobsNET</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>JobsNET</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a target="_blank" href="#">Sobre nós</a>
+                </li>
+                <li> 
+                    <a target="_blank" href="#">FAQ</i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Contato</a>
+                </li>
+            </ul>
+            </div>
+        </header>
+        <main>
+        <section class="formulario">
+            <h3>Cadastre o seu currículo no nosso banco de talentos:</h3>
+            <form id="form">
+                <div class="form-row">
+                    <fieldset>
+                        <label for="name">Nome Completo:<span>*</span>
+                        </label>
+                        <input type="text" for="name" id="name" name="nome" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cargo">Cargo Pretendido:<span>*</span>
+                        </label>
+                        <input type="text" for="cargo" id="cargo" name="cargo" required>
+                    </fieldset>
+                </div>
+
+                <div class="form-row">
+                    <fieldset>
+                        <label for="nascimento"> Data de Nascimento:<span>*</span>
+                        </label>
+                        <input type="date" for="nascimento" id="nascimento" name="dataNasc" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="estado-civil"> Estado Civil:
+                        </label>
+                        <select name="estadoCivil">
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="name"> Genêro:
+                        </label>
+                        <select name="genero">
+                            <option label="" disabled selected value>Escolha uma opção:</option>
+                            <option value="MulherCis">Mulher Cis</option>
+                            <option value="MulherTrans">Mulher Trans</option>
+                            <option value="HomemCis">Homem Cis</option>
+                            <option value="HomemTrans">Homem Trans</option>
+                            <option value="Naobinario">Não Binário</option>
+                            <option value="nao-informado">Prefiro não informar</option>
+                        </select>
+                    </fieldset>
+
+
+                </div>
+
+                <div class="form-row">
+
+                    <fieldset class="cep">
+                        <label for="cep"> CEP:<span>*</span>
+                        </label>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9">
+                    </fieldset>
+
+                    <fieldset class="endereco">
+                        <label for="endereco"> Endereço:<span>*</span>
+                        </label>
+                        <input type="address" for="endereco" id="endereco" name="endereco" required>
+                    </fieldset>
+
+                    <fieldset class="numero">
+                        <label for="numero">Número<span>*</span>
+                        </label>
+                        <input type="number" for="numero" id="numero" name="numero" required>
+                    </fieldset>
+
+                </div>
+
+                <div class="form-row">
+                    <fieldset>
+                        <label for="bairro"> Bairro:<span>*</span>
+                        </label>
+                        <input type="address" for="bairro" id="bairro" name="bairro" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cidade"> Cidade:<span>*</span>
+                        </label>
+                        <input type="address" for="cidade" id="cidade" name="cidade" required>
+                    </fieldset>
+
+                    <fieldset class="estado">
+                        <label for="uf" >Estado:<span>*</span>
+                        </label>
+                        <input type="address" for="uf" id="uf" name="estado" required>
+                    </fieldset>
+
+                </div>
+
+                <div class="form-row">
+                    <fieldset class="email">
+                        <label for="email"> Email:<span>*</span>
+                        </label>
+                        <input type="email" for="email" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="celular"> Celular:<span>*</span>
+                        </label>
+                        <input type="phone" for="celular" id="celular" name="celular" required>
+                    </fieldset>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <fieldset>
+                        <label for="tel-1"> Telefone Fixo:
+                        </label>
+                        <input type="phone" for="tel-1" id="tel-1" name="tel1">
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="tel-2"> Telefone secundário:
+                        </label>
+                        <input type="phone" for="tel-2" id="tel-2" name="tel2">
+                    </fieldset>
+                    
+                </div>
+
+                <h2>Documentos</h2>
+
+
+                <div class="form-row">
+                    <fieldset>
+                        <label for="id"> Identidade:<span>*</span>
+                        </label>
+                        <input type="number" for="id" id="id" name="identidade">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cpf"> CPF:<span>*</span>
+                        </label>
+                        <input type="number" for="cpf" id="cpf" name="cpf" required>
+                    </fieldset>
+                </div>
+
+                <div class="form-row">
+                    <fieldset>
+                        <p>Habilitação:</p>
+                        </label>
+                        <div class="habilitacao">
+                            <input type="checkbox" id="nao_habilitado" name="habilitacao">
+                            <label for="nao_habilitado">Não possui</label>
+
+                            <input type="checkbox" id="catA" name="habilitacao">
+                            <label for="nao_habilitado">Categoria A</label>
+
+                            <input type="checkbox" id="catB" name="habilitacao">
+                            <label for="nao_habilitado">Categoria B</label>
+
+                            <input type="checkbox" id="catC" name="habilitacao">
+                            <label for="nao_habilitado">Categoria C</label>
+
+                            <input type="checkbox" id="catD" name="habilitacao">
+                            <label for="nao_habilitado">Categoria D</label>
+
+                            <input type="checkbox" id="catE" name="habilitacao">
+                            <label for="nao_habilitado">Categoria E</label>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p>Possui carro?</p>
+                        <div class="carro">
+                            <input type="radio" id="possui_carro" name="carro" value="Sim">
+                            <label for="possui_carro">Sim</label>
+                            <input type="radio" id="nao_possui_carro" name="carro" value="Não">
+                            <label for="nao_possui_carro">Não</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+</body>
+<footer>
+    <p>Desenvolvido por <a href="https://www.linkedin.com/in/maria-clara-saraiva/" id="linkedin"> Maria Clara Saraiva </a> como parte do programa
+        Start Tech da Gama Academy</p>
+</footer>
+</html>

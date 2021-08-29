@@ -1,7 +1,7 @@
 'use strict';
 
 // const API_URL = 'http://localhost:7000'
-const API_URL = 'https://banco-curriculos-jobsnet.herokuapp.com/'
+const API_URL = 'https://banco-curriculos-jobsnet.herokuapp.com'
 
 const $addressInput = document.getElementById('endereco');
 const $neighborhoodInput = document.getElementById('bairro');

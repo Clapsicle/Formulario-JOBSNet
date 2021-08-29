@@ -13,26 +13,26 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>JobsNET</h1>
-        </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a target="_blank" href="#">Sobre nós</a>
+        <div class="header-content">
+            <div class="logo">
+                <h1>JobsNET</h1>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <a class="menu-link" target="_blank" href="#">Sobre nós</a>
                 </li>
-                <li> 
-                    <a target="_blank" href="#">FAQ</i></a>
+                <li class="menu-list-item"> 
+                    <a class="menu-link" target="_blank" href="#">FAQ</i></a>
                 </li>
-                <li>
-                    <a target="_blank" href="#">Contato</a>
+                <li class="menu-list-item">
+                    <a class="menu-link" target="_blank" href="#">Contato</a>
                 </li>
             </ul>
-            </div>
-        </header>
-        <main>
-        <section class="formulario">
-            <h3>Cadastre o seu currículo no nosso banco de talentos:</h3>
+        </div>
+    </header>
+    <main class="main">
+        <section class="form-section">
+            <h2 class="title">Cadastre o seu currículo no nosso banco de talentos:</h2>
             <form id="form">
                 <div class="form-row">
                     <fieldset>
@@ -79,12 +79,9 @@
                             <option value="nao-informado">Prefiro não informar</option>
                         </select>
                     </fieldset>
-
-
                 </div>
 
                 <div class="form-row">
-
                     <fieldset class="cep">
                         <label for="cep"> CEP:<span>*</span>
                         </label>
@@ -102,7 +99,6 @@
                         </label>
                         <input type="number" for="numero" id="numero" name="numero" required>
                     </fieldset>
-
                 </div>
 
                 <div class="form-row">
@@ -123,7 +119,6 @@
                         </label>
                         <input type="address" for="uf" id="uf" name="estado" required>
                     </fieldset>
-
                 </div>
 
                 <div class="form-row">
@@ -138,12 +133,10 @@
                         </label>
                         <input type="phone" for="celular" id="celular" name="celular" required>
                     </fieldset>
-
                 </div>
 
 
                 <div class="form-row">
-
                     <fieldset>
                         <label for="tel-1"> Telefone Fixo:
                         </label>
@@ -155,11 +148,9 @@
                         </label>
                         <input type="phone" for="tel-2" id="tel-2" name="tel2">
                     </fieldset>
-                    
                 </div>
 
                 <h2>Documentos</h2>
-
 
                 <div class="form-row">
                     <fieldset>
@@ -213,9 +204,11 @@
                 </div>
                 <button type="submit">Enviar</button>
             </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/maria-clara-saraiva/" id="linkedin"> Maria Clara Saraiva </a> como parte do programa
+            Start Tech da Gama Academy</p>
+    </footer>
 </body>
-<footer>
-    <p>Desenvolvido por <a href="https://www.linkedin.com/in/maria-clara-saraiva/" id="linkedin"> Maria Clara Saraiva </a> como parte do programa
-        Start Tech da Gama Academy</p>
-</footer>
 </html>

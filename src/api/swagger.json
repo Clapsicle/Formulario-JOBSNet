@@ -1,0 +1,118 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API do projeto gama",
+    "description": "API do projeto para Gama Academy",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:7000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário, recebe: nome, cargo, dataNasc, estadoCivil, gênero, cep, endereco, numero, bairro, cidade, estado, email, celular, identidade, cpf, habilitacao e carro",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "dataNasc": {
+                    "type": "string"
+                  },
+                  "estadoCivil": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "estado": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "tel1": {
+                    "type": "string"
+                  },
+                  "tel2": {
+                    "type": "string"
+                  },
+                  "identidade": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  },
+                  "carro": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "a propria": {
+                  "value": {
+                    "nome": "Clara",
+                    "cargo": "cargo x",
+                    "dataNasc": "00/00/0000",
+                    "estadoCivil": "solteira",
+                    "genero": "Mulher cis ",
+                    "cep": "00000-000",
+                    "endereco": " rua trlalala",
+                    "numero": "123",
+                    "bairro": " bairro bairro",
+                    "cidade": " mundo da lua ",
+                    "estado": " lalala ",
+                    "email": "algumacoisa@gmail.com",
+                    "celular": "12345678 ",
+                    "tel1": " ",
+                    "tel2": " ",
+                    "identidade": "12345678",
+                    "cpf": "12345678912",
+                    "habilitacao": " B",
+                    "carro": " sim "
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

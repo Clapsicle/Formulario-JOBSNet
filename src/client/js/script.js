@@ -1,10 +1,12 @@
 'use strict';
 
+// const API_URL = 'http://localhost:7000'
+const API_URL = 'https://banco-curriculos-jobsnet.herokuapp.com/'
+
 const $addressInput = document.getElementById('endereco');
 const $neighborhoodInput = document.getElementById('bairro');
 const $city = document.getElementById('cidade');
 const $uf = document.getElementById('uf');
-
 
 const fillAddress = (address) => {
     $addressInput.value = address.logradouro || '';
@@ -110,7 +112,7 @@ async function handleSubmit(event) {
     const data = formDataToJson(formData);
 
     try {
-        fetch('http://localhost:7000/register', {
+        fetch(`${API_URL}/register`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
